@@ -1,10 +1,4 @@
-<?php 
-  session_start();
-  if(!isset($_SESSION["email"]) || !isset($_SESSION["senha"])){
-    header("Location:login.php");
-    exit;
-  }
-?>
+
 
 <!DOCTYPE HTML>
 <html>
@@ -14,16 +8,16 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/moment.min.js"></script>
-		<link rel="stylesheet" href="assets/css/manutencao.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="jquery.min.js"></script>
+		<script src="moment.min.js"></script>
+		<link rel="stylesheet" href="manutencao.css" />
+		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
 
 
 		<!-- fullcalendar -->
 		<link rel="stylesheet" href="assets/css/fullcalendar.min.css" />
-		<script src="assets/js/fullcalendar.min.js"></script>
-		<script src="assets/js/pt-br.js"></script>
+		<script src="fullcalendar.min.js"></script>
+		<script src="pt-br.js"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -88,7 +82,7 @@
 							$("#exampleModalCenter").modal();
 
 						},
-						events: 'assets/php/data_manutencao.php',
+						events: 'data_manutencao.php',
 
 						eventClick: function(calEvent, jsEvent, view){
 							$('#energia').html(calEvent.energ_gerada);
@@ -144,13 +138,13 @@
 		<!-- Scripts -->		
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="jquery.scrolly.min.js"></script>
+			<script src="jquery.dropotron.min.js"></script>
+			<script src="jquery.scrollex.min.js"></script>
+			<script src="browser.min.js"></script>
+			<script src="breakpoints.min.js"></script>
+			<script src="util.js"></script>
+			<script src="main.js"></script>
 
 
 	</body>
